@@ -1,0 +1,26 @@
+{
+	"name": "@vvfy/common",
+	"version": "1.0.0",
+	"description": "Core shared components and utilities",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"files": [
+		"dist"
+	],
+	"publishConfig": {
+		"access": "public"
+	},
+	"scripts": {
+		"build": "tsc -p tsconfig.build.json",
+		"format": "prettier --write \"src/**/*.ts\""
+	},
+	"devDependencies": {
+		"@nestjs/apollo": "^13.2.4",
+		"@types/express": "^5.0.6",
+		"@types/node": "^25.2.3",
+		"@vvfy/core": "^1.0.2",
+		"express": "^5.2.1",
+		"prettier": "^3.8.1",
+		"typescript": "^5.9.3"
+	}
+}
